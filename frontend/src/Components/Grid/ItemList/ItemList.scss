@@ -1,0 +1,52 @@
+@import "../../../color";
+
+.block-list-item {
+  display: flex;
+  cursor: pointer;
+  &:hover{
+    opacity: .85;
+  }
+  div {
+    flex-grow: 1;
+    width: 20%;
+    padding: 5px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    align-items: center;
+    display: flex;
+    &:first-child {
+      width: 50%;
+    }
+  }
+  .last {
+    justify-content: center;
+    cursor: pointer;
+    .icon {
+      display: flex;
+      img {
+        margin: auto;
+        width: 15px;
+        transition: transform 0.5s ease-out;
+      }
+    }
+  }
+  .active {
+    .icon img {
+      transform: rotate(180deg);
+    }
+  }
+}
+.dark {
+  background: #e9f5f5;
+}
+.light {
+  background: $white;
+}
+.details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.expand {
+  max-height: 500px !important;
+}

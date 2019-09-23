@@ -1,0 +1,33 @@
+@import "../../../color";
+.block-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin: auto;  
+  }
+  .detail-List {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin: 0px 15px;
+    .info {
+      display: flex;
+      margin: 5px;
+      .lable {
+        margin-right: 10px;
+        font-size: 16px;
+      }
+      .value {
+        font-size: 14px;
+        color: $orange;
+      }
+    }
+  }
+}

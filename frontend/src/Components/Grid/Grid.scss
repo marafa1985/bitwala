@@ -1,0 +1,25 @@
+@import "../../color";
+.block-list {
+  border-radius: 5px;
+  padding: 15px;
+  flex-grow: 1;
+  ul {
+    list-style: none;
+    color: #657189;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    .no-block {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block-list {
+    margin-left: 50px;
+  }
+}

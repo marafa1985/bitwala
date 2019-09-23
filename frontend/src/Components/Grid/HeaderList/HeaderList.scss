@@ -1,0 +1,36 @@
+.header {
+  background: #e5f0fa;
+  color: #ff952d;
+  font-size: 16px;
+  padding: 5px;
+  .block-list-header {
+    display: flex;
+
+    div {
+      flex-grow: 1;
+      width: 20%;
+      padding: 5px;
+      &:first-child {
+        width: 50%;
+      }
+
+      span {
+        cursor: pointer;
+        margin-right: 5px;
+      }
+      .arrowup {
+        transform: rotate(180deg);
+      }
+    }
+    .last {
+      justify-content: center;
+      display: flex;
+      .icon {
+        display: flex;
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
